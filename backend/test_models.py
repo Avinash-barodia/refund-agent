@@ -1,0 +1,13 @@
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.getenv("GEMINI_API_KEY", ""),
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+)
+
+try:
+    models = client.models.list()
+    print([m.id for m in models.data])
+except Exception as e:
+    print("Error:", e)

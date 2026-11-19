@@ -1,0 +1,21 @@
+# Virtual Environments
+backend/venv/
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database
+backend/crm.db
+
+# Node
+node_modules/
+.next/
+out/
+build/
+.DS_Store
